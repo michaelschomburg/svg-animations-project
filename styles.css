@@ -5,7 +5,7 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   color: #111;
-  background: #edeff0;
+  background: #eaecee url("svgs/background.svg") ;
 }
 
 #container {
@@ -59,4 +59,76 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+.nav {
+  margin-top: 1em;
+  margin-left: 2em;
+  flex-direction: row;
+}
+
+.nav-text {
+  color: #39ADD0;
+  font-weight: bold;
+  margin-left: 1em;
+  margin-right: 2em;
+}
+
+.nav-item:hover .st0,
+.nav-item:hover .nav-text {
+  transition: all 1s ease-out;
+  fill: #111;
+  color: #111;
+  cursor: pointer;
+}
+
+.logo {
+  width: 140px;
+  height: 120px;
+}
+
+/* flex-alignment */
+
+.flex {
+    display: flex;
+
+    .align-center {
+        margin: auto;
+        align-self: center;
+    }
+
+    .align-left {
+        margin-right: auto;
+        align-self: center;
+    }
+
+    .align-right {
+        margin-left: auto;
+        align-self: center;
+    }
+
+    .align-x-center {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .align-x-left {
+        margin-right: auto;
+    }
+
+    .align-x-right {
+        margin-left: auto;
+    }
+
+    .align-y-center {
+        align-self: center;
+    }
+
+    .align-y-top {
+        align-self: flex-start;
+    }
+
+    .align-y-bottom {
+        align-self: flex-end;
+    }
 }
