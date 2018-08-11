@@ -64,6 +64,7 @@ footer {
 .nav {
   margin-top: 1em;
   margin-left: 2em;
+  margin-bottom: 10%;
   flex-direction: row;
 }
 
@@ -76,10 +77,11 @@ footer {
 
 .nav-item:hover .st0,
 .nav-item:hover .nav-text {
-  transition: all 1s ease-out;
+  transition: all .3s ease-out;
   fill: #111;
   color: #111;
   cursor: pointer;
+  letter-spacing: 2px;
 }
 
 .logo {
@@ -87,11 +89,63 @@ footer {
   height: 120px;
 }
 
+.logo:hover{
+transition: transform 1s ease-in-out;
+  transform: rotate(3turn);
+}
+
+.logo-text {
+  visibility: hidden;
+}
+
+.dog-images{
+  width: 85%;
+}
+
+.dog {
+  flex-direction: column;
+  width: 25%;
+}
+
+.dog span {
+  padding-right: 1.5em;
+  color: #c49175;
+}
+
+.sable {
+  color: #b07351;
+}
+
+.fawn {
+color:  #E6A077
+}
+
+.red {
+  color:#784225;
+}
+
+.stone{
+  color:#484f53;
+}
+
+
+
+
+
+@media (min-width: 425px) {
+  .logo-text {
+    visibility: visible;
+  }
+  .logo-text-h1{
+    display: none;
+  }
+}
+
 /* flex-alignment */
 
 .flex {
     display: flex;
-
+}
     .align-center {
         margin: auto;
         align-self: center;
@@ -131,4 +185,3 @@ footer {
     .align-y-bottom {
         align-self: flex-end;
     }
-}
